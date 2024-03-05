@@ -4,18 +4,29 @@
         <meta charset="UTF-8">
         <title>Sito Accessibile di Alex&Ale</title>
         <link type="text/css" rel="stylesheet" href="./css/lingua.css">
+        <link type="text/css" rel="stylesheet" href="./css/night-mode.css">
         <link type="text/css" rel="stylesheet" href="./css/style.css">
         <script src="js/index.js" defer></script>
+        <script src="js/night-mode.js" defer></script>
     </head>
     <body>
         <div id="header">
+            <img src="imgs/universal-access-circle.svg">
+
             <div class="lingua">
-                <button class="bottone-lingua">Dropdown</button>
+                <button class="bottone-lingua">Scegli una lingua</button>
                 <div class="contenuto-lingua">
-                  <button onclick="changeLanguage('it')">🇮🇹</button>
-                  <button onclick="changeLanguage('en')">🇺🇸</button>
+                    <button onclick="changeLanguage('it')">🇮🇹</button>
+                    <button onclick="changeLanguage('en')">🇺🇸</button>
                 </div>
-              </div> 
+                <div class="container">
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            </div>
+            
         </div>
         <div id="content">
             <div id="introduction">

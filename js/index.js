@@ -1,5 +1,5 @@
-var contenuti;
-var lingua = "it";
+let contenuti;
+let lingua;
 
 let elementi = [
     document.getElementById("introduction"),
@@ -29,3 +29,5 @@ function changeLanguage(a) {
     console.log("Cambiata la lingua a " + lingua);
     update();
 }
+
+changeLanguage("it")
