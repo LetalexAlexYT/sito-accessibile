@@ -16,6 +16,9 @@ async function fetchContenuti() {
         if(lingua === "it") {
             introduction.innerHTML = `<h1>${contenuti.it.introduction.title}</h1><p>${contenuti.it.introduction.paragraph}</p>`;
             braille.innerHTML = `<h1>${contenuti.it.braille.title}</h1><p>${contenuti.it.braille.paragraph}</p>`;
+        } else if(lingua === "en") {
+            introduction.innerHTML = `<h1>${contenuti.en.introduction.title}</h1><p>${contenuti.en.introduction.paragraph}</p>`;
+            braille.innerHTML = `<h1>${contenuti.en.braille.title}</h1><p>${contenuti.en.braille.paragraph}</p>`;
         }
         
 
