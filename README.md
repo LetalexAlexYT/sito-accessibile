@@ -30,3 +30,11 @@
 - content
   - vedere contenuti
 - footer
+
+---
+# TODO
+- Finire il dark mode
+- eventuali altre lingue (spagnolo, francese)
+- Bandiere nel robo per cambiare lingua
+- CONTENUTI
+- Stile
