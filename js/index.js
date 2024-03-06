@@ -31,4 +31,7 @@ function changeLanguage(a) {
     update();
 }
 
-changeLanguage("it")
+
+lingua = localStorage.getItem("Language")
+if(lingua === null)
+    changeLanguage("it")

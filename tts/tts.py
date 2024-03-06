@@ -6,7 +6,7 @@ from pathlib import Path
 from openai import OpenAI
 
 #* Caricamento dei dati da un file JSON
-with open("json/contenuto.json", "r") as file:
+with open("json/contenuto.json", "rw") as file:
     contenuti = json.load(file)
     
 '''
