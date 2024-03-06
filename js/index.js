@@ -27,6 +27,7 @@ async function update() {
 function changeLanguage(a) {
     lingua = a;
     console.log("Cambiata la lingua a " + lingua);
+    localStorage.setItem("Language", a)
     update();
 }
 
