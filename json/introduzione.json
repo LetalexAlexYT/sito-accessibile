@@ -25,27 +25,6 @@
             "paragraph": "Dopo la visita all'acquario, ci siamo diretti all'istituzione dei ciechi a Milano, dove abbiamo vissuto un'esperienza davvero unica. Siamo stati condotti in una stanza completamente priva di luce, dove l'oscurità era totale. Qui, una gentile ragazza ci ha guidati attraverso un viaggio sensoriale basato esclusivamente sul tatto. Ci ha presentato una serie di oggetti da toccare e esplorare, tra cui legno, conchiglie e spugne. Con le nostre mani abbiamo esplorato la texture, la forma e la consistenza di ciascun oggetto, cercando di identificarli senza l'ausilio della vista. Alla fine, ci ha posto di fronte a una stella marina, invitandoci a toccarla delicatamente e ad esplorarne i dettagli. Questa esperienza ci ha fatto prendere consapevolezza dell'importanza del senso del tatto e ci ha permesso di apprezzare la ricchezza sensoriale che ci circonda, anche quando privati della vista. È stata un'esperienza emozionante e formativa, che ci ha aperto gli occhi sulla capacità umana di adattarsi e percepire il mondo in modi diversi e sorprendenti."
         },
         "celebrity": {
-            "title": "Celebrità dell'Accessibilità: Ispirare un Cambiamento Positivo",
-            "paragraph": "Celebriamo coloro che si sono distinti nel promuovere l'accessibilità e i diritti delle persone con disabilità, ispirando gli altri a seguire il loro esempio per creare un mondo più inclusivo. Dalle figure pubbliche agli attivisti locali, c'è una ricca varietà di persone che si dedicano a promuovere l'accessibilità e l'inclusione. Questi individui ci mostrano il potere del cambiamento positivo e ci incoraggiano a lavorare insieme per eliminare le barriere e creare un mondo più equo e accessibile per tutti. Riconosciamo e celebriamo il loro impegno e la loro leadership nel portare avanti la causa dell'accessibilità per tutti. Ogni azione, grande o piccola, contribuisce a promuovere un cambiamento positivo e a creare un futuro migliore per le generazioni a venire.",
-            "celebrities": [
-                {
-                    "name": "Stevie Wonder",
-                    "description": "Conosciuto in tutto il mondo per il suo straordinario talento musicale, Stevie Wonder è anche un fervente sostenitore dei diritti delle persone con disabilità. Ha lavorato attivamente per sensibilizzare sulle sfide affrontate dalle persone non vedenti e ha promosso l'accessibilità nei settori della musica e dell'intrattenimento."
-                },
-                {
-                    "name": "Marla Runyan",
-                    "description": "Marla Runyan è una corritrice non vedente che ha gareggiato in numerose competizioni internazionali, inclusi i Giochi Paralimpici. Ha dimostrato al mondo che le persone non vedenti possono competere e avere successo in eventi sportivi di alto livello, ispirando altri con disabilità a perseguire i propri sogni."
-                },
-                {
-                    "name": "Haben Girma",
-                    "description": "Haben Girma è un'avvocata e attivista non vedente che ha difeso i diritti delle persone con disabilità, in particolare per quanto riguarda l'accesso all'istruzione e all'informazione. È stata la prima studentessa non vedente a laurearsi alla Harvard Law School e ha continuato a lavorare per rendere il mondo un luogo più inclusivo per tutti."
-                },
-                {
-                    "name": "Erik Weihenmayer",
-                    "description": "Erik Weihenmayer è un alpinista non vedente che ha scalato le vette più alte di tutti i continenti, incluso l'Everest. Il suo coraggio e la sua determinazione hanno dimostrato che le persone non vedenti possono superare sfide incredibili e raggiungere traguardi straordinari."
-                }
-            ]
-        }
     },
     "en":{
         "introduction": {
@@ -95,4 +74,5 @@
             ]
         }
     }    
+}
 }
