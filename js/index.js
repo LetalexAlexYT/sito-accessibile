@@ -13,7 +13,7 @@ let elementi = [
 
 async function update() {
     try {
-        const response = await fetch('../json/contenuto.json');
+        const response = await fetch('../json/introduzione.json');
         contenuti = await response.json();
         //console.log(contenuti); // Stampa il JSON una volta assegnato
         elementi.forEach(elemento => {
