@@ -1,0 +1,126 @@
+/* Base Styles */
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2 {
+    color: #0056b3;
+}
+
+p, .braille, .work, .laws, .aquarium, .institution {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Button Styles */
+.button, .toggle-dark-mode, .bottone-lingua {
+    display: inline-block;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover, .toggle-dark-mode:hover, .bottone-lingua:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.button:active {
+    background-color: #004494;
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Language Switcher Styles */
+.lingua, .contenuto-lingua {
+    position: relative;
+    display: inline-block;
+}
+
+.contenuto-lingua {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.contenuto-lingua a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.contenuto-lingua a:hover {background-color: #ddd;}
+
+.lingua:hover .contenuto-lingua {display: block;}
+
+/* Dark Mode Styles */
+[data-theme='dark'], .dark-mode {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+[data-theme='dark'] a, .dark-mode a {
+    color: #ecdb00;
+}
+
+/* Header Styles */
+#header {
+    background-color: #29b7ff;
+    position: relative;
+}
+
+#header img {
+    width: 3%;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
