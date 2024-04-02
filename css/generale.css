@@ -1,3 +1,4 @@
+/* Contenuto di generale.css */
 body {
     font-family: 'Montserrat', Arial, sans-serif;
     line-height: 1.6;
@@ -17,7 +18,6 @@ p {
     font-size: 16px;
 }
 
-/* Miglioramenti per l'accessibilità */
 a {
     color: #007bff;
     text-decoration: none;
@@ -29,7 +29,6 @@ a:hover, a:focus {
     color: #0056b3;
 }
 
-/* Stili specifici per sezioni */
 .section {
     background-color: #fff;
     padding: 20px;
@@ -39,20 +38,17 @@ a:hover, a:focus {
     transition: background-color 0.3s ease;
 }
 
-/* Stili per migliorare la leggibilità del testo Braille e altre sezioni specifiche */
 .braille, .work, .laws, .aquarium, .institution {
     font-size: 16px;
     line-height: 1.8;
 }
 
-/* Stili per le immagini, se presenti */
 img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
 }
 
-/* Stili per i bottoni o link che agiscono come tali */
 .button, .toggle-dark-mode {
     display: inline-block;
     background-color: #007bff;
@@ -74,7 +70,6 @@ img {
     margin-top: 20px;
 }
 
-/* Stili per la modalità notturna */
 .dark-mode, .night-mode {
     background-color: #2c3e50;
     color: #ecf0f1;
@@ -103,4 +98,133 @@ img {
 
 .toggle-dark-mode:hover {
     background-color: #e7e7e7;
+}
+
+/* Contenuto di lingua.css */
+.bottone-lingua {
+  background-color: #005986;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.lingua {
+  position: relative;
+  display: inline-block;
+}
+
+.contenuto-lingua {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.contenuto-lingua a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.contenuto-lingua a:hover {background-color: #ddd;}
+
+.lingua:hover .contenuto-lingua {display: block;}
+
+.lingua:hover .bottone-lingua {background-color: #3e8e41;}
+
+/* Contenuto di night-mode.css */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+[data-theme='light'] {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+[data-theme='dark'] {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+[data-theme='dark'] #header {
+    background-color: #1e1e1e;
+}
+
+/* Contenuto di style.css */
+@font-face {
+    font-family: braille;
+    src: url("../fonts/braille.ttf");
+}
+
+@font-face {
+    font-family: bello;
+    src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+body {
+    margin: 0;
+    font-family: bello;
+}
+
+#header {
+    background-color: #29b7ff;
+    position: relative;
+}
+
+#header img {
+    width: 3%;
+}
+
+.lingua {
+    float: right;
+}
+
+.button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    outline: none; /* Rimuove il contorno quando il bottone è in focus */
+}
+
+.button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.button:active {
+    background-color: #004494;
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.button:focus {
+    box-shadow: 0 0 0 2px rgba(0,117,255,0.5); /* Aggiunge un contorno visibile per l'accessibilità */
+}
+
+/* Assicurati che i bottoni siano facilmente navigabili anche da tastiera */
+.button:focus-visible {
+    outline: 2px solid #0056b3;
+    outline-offset: 2px;
+}
+
+/* Adattabilità */
+@media (max-width: 768px) {
+    .button {
+        padding: 8px 16px;
+        font-size: 14px; /* Riduci la dimensione del testo per dispositivi più piccoli */
+    }
 }
