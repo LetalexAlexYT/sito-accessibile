@@ -5,6 +5,7 @@ body {
     padding: 20px;
     background-color: #f4f4f4;
     color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1, h2 {
@@ -20,6 +21,7 @@ p {
 a {
     color: #007bff;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 a:hover, a:focus {
@@ -34,6 +36,7 @@ a:hover, a:focus {
     margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
 }
 
 /* Stili per migliorare la leggibilità del testo Braille e altre sezioni specifiche */
@@ -50,7 +53,7 @@ img {
 }
 
 /* Stili per i bottoni o link che agiscono come tali */
-.button {
+.button, .toggle-dark-mode {
     display: inline-block;
     background-color: #007bff;
     color: #ffffff;
@@ -62,7 +65,7 @@ img {
     transition: background-color 0.3s ease;
 }
 
-.button:hover {
+.button:hover, .toggle-dark-mode:hover {
     background-color: #0056b3;
 }
 
@@ -71,77 +74,31 @@ img {
     margin-top: 20px;
 }
 
-.button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 15px;
-    margin: 5px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-}
-
-.button:hover {
-    background-color: #0056b3;
-}
-
-/* Aggiunta di stili per la modalità notturna */
-.night-mode {
+/* Stili per la modalità notturna */
+.dark-mode, .night-mode {
     background-color: #2c3e50;
     color: #ecf0f1;
 }
 
-.night-mode a {
+.dark-mode a, .night-mode a, .dark-mode .button, .night-mode .button {
     color: #ecdb00;
 }
 
-.night-mode .section {
+.dark-mode .section, .night-mode .section {
     background-color: #34495e;
 }
 
-.night-mode .button {
-    background-color: #ecdb00;
-    color: #2c3e50;
-}
-
-.night-mode .button:hover {
+.dark-mode .button:hover, .night-mode .button:hover {
     background-color: #f1c40f;
 }
 
-body.dark-mode {
-    background-color: #2c3e50;
-    color: #ecf0f1;
-}
-
-.dark-mode a {
-    color: #ecdb00;
-}
-
-.dark-mode .section {
-    background-color: #34495e;
-}
-
-.dark-mode .button {
-    background-color: #ecdb00;
-    color: #2c3e50;
-}
-
-.dark-mode .button:hover {
-    background-color: #f1c40f;
-}
-
-/* Aggiunta di un bottone per attivare/disattivare la dark mode */
 .toggle-dark-mode {
+    background-color: #fff;
+    color: #333;
     position: fixed;
     top: 10px;
     right: 10px;
-    background-color: #fff;
-    color: #333;
-    border: none;
-    border-radius: 5px;
     padding: 5px 10px;
-    cursor: pointer;
 }
 
 .toggle-dark-mode:hover {
