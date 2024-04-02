@@ -1,46 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Sito Accessibile di Alex&Ale</title>
-        <link type="text/css" rel="stylesheet" href="./css/lingua.css">
-        <link type="text/css" rel="stylesheet" href="./css/night-mode.css">
-        <link type="text/css" rel="stylesheet" href="./css/style.css">
-        <script src="js/index.js" defer></script>
-        <script src="js/night-mode.js" defer></script>
-        <!--tts deve essere esseguito dopo index.js-->
-        <script src="js/tts.js" defer></script>
-    </head>
-    <body>
-        <div id="header">
-            <img src="imgs/universal-access-circle.svg">
-            
-        </div>
-        <div id="content">
-            <div id="introduction">
-
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benvenuto all'Accessibilità: Un Mondo di Inclusione</title>
+    <link rel="stylesheet" href="css/generale.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/night-mode.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Benvenuto all'Accessibilità: Un Mondo di Inclusione</h1>
+    </header>
+    <main>
+        <section class="language-selection">
+            <h2>Scegli la tua lingua / Choose your language</h2>
+            <div class="language-options">
+                <!-- Bottoni per la selezione della lingua -->
+                <button onclick="window.location.href='ita/introduzione.html';">Italiano</button>
+                <button onclick="window.location.href='en/introduzione.html';">English</button>
             </div>
-            <div id="braille">
-
-            </div>
-            <div id="work">
-
-            </div>
-            <div id="laws">
-
-            </div>
-            <div id="aquarium">
-
-            </div>
-            <div id="institution">
-
-            </div>
-            <div id="celebrity">
-
-            </div>
-        </div>
-        <div id="footer">
-
-        </div>
-    </body>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Accessibilità per Tutti. Tutti i diritti riservati.</p>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/night-mode.js"></script>
+</body>
 </html>

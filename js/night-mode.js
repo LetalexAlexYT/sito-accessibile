@@ -11,3 +11,11 @@ function switchTheme() {
         document.body.removeAttribute('data-theme');
     }
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var darkModeButton = document.querySelector('.toggle-dark-mode');
+    darkModeButton.addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+    });
+});
