@@ -14,8 +14,8 @@ body {
     padding: 20px;
 }
 
-h1, h2 {
-    color: #0056b3;
+h1, h2, h3, h4, h5, h6 {
+    color: #65afff;
 }
 
 p, .braille, .work, .laws, .aquarium, .institution {
@@ -68,7 +68,7 @@ img {
 }
 
 .button:hover, .toggle-dark-mode:hover, .bottone-lingua:hover {
-    background-color: #0056b3;
+    background-color: #007bff;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
@@ -85,7 +85,7 @@ img {
 }
 
 [data-theme='dark'] a, .dark-mode a {
-    color: #ecdb00;
+    color: #ffffff;
 }
 [data-theme='dark'] .header  {
     background-color: #696969;
