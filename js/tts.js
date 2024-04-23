@@ -18,16 +18,11 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Crea e aggiungi il bottone per attivare la lettura del contenuto
-  let readContentButton = document.createElement('button');
-  readContentButton.textContent = 'Leggi il contenuto';
+  let readContentButton = document.getElementById('read');
   readContentButton.addEventListener('click', readPageContent);
-  document.body.appendChild(readContentButton); // Usa appendChild invece di insertBefore
-
   // Crea e aggiungi il bottone per fermare la lettura
-  let stopReadingButton = document.createElement('button');
-  stopReadingButton.textContent = 'Ferma lettura';
+  let stopReadingButton = document.getElementById('stop');
   stopReadingButton.addEventListener('click', function() {
       window.speechSynthesis.cancel();
   });
-  document.body.appendChild(stopReadingButton); // Usa appendChild
 });
