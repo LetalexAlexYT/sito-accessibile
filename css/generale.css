@@ -114,3 +114,9 @@ main {
 li img {
     width: 100%;
 }
+
+.img_site{
+    max-width: 30%;
+    height: auto;
+    border-radius: 5px;
+}
